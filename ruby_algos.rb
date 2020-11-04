@@ -81,7 +81,7 @@ students = [
 # create a variable called allFemales that stores the result of calling filterGender and the isFemale callback
 
 #################################################################
-# DUPLICATE COUNT
+# BONUS: DUPLICATE COUNT
 #################################################################
 
 colorsArr = [
