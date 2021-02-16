@@ -3,7 +3,7 @@
 
 ### Ruby Basics: 1hr
 - [Ruby Algos](./ruby_algos.rb)
--  When completed submit your homework [here](https://docs.google.com/forms/d/e/1FAIpQLSeroos9mbUxkYhzETYq4dylzqb_il07tKHBby2YPLkqb0Wr9Q/viewform). 
+- When completed submit your link via the HW Submission Form pinned to the classroom channel.
 
 ### Read - EST TIME: 30min
 - [Relational Databases](https://www.smartsheet.com/relational-database) - Its a long read and it's advised you read the entire tutorial before Friday.  Please also focus specifically on the section related to **"Relational Databases vs. Nonrelational Databases"**
