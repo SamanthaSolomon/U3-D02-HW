@@ -18,14 +18,18 @@ Constitution for the United States of America)
   # Assume each entry in the list implements a length method that returns
   # a Fixnum.
   def longest(list)
-    # Your code goes here
+    list.max_by {|obj| obj.length}
   end
+
+  # p longest(words)
 
   # Write ruby code that returns an array with all of the
   # entries from the list of words capitalized (i.e. 'foo' becomes 'Foo').
   def transform(words)
-    # Your code goes here
+    words.each {|word| word.capitalize!}
   end
+
+# p transform(words)
 
 #################################################################
 # NUMBERS ARRAYS
@@ -38,19 +42,31 @@ mixed_nums = [0, 2, 4, 7]
   # Write ruby code that returns true if some of the entries
   # in the list of numbers are odd (test the three given number arrays)
   def some_odd(numbers)
-    # Your code goes here
+    numbers.each do |i|
+      if i.odd?
+        return true
+      else
+        return false
+      end
+    end  
   end
+
+  # p some_odd(mixed_nums)
 
   # Write ruby code that returns true if every entry in the
   # list of numbers are even (test the three given number arrays)
   def every_even(numbers)
-    # Your code goes here
+    numbers.select {|i| i.even?}
+    return true
   end
+#p every_even(mixed_nums)
 
   # Write ruby code that returns the sum total of all the numbers in the even_nums array
   def sum_evens(numbers)
-    # Your code goes here
+    numbers.inject(0, :+)
   end
+
+  #p sum_evens(even_nums)
 
 #################################################################
 # STUDENTS ARRAY
@@ -70,11 +86,37 @@ students = [
 
 # create a method called isMale that filters for a gender of 'M' and returns those elements
 
+def isMale arr
+  male=[]
+  arr.each do |n|
+    if n[:gender] == 'M'
+      male << n
+    end
+  end
+  return male
+end 
+
+# p isMale students
+
 # create a method called isFemale that filters for a gender of 'F' and returns those elements
+
+def isFemale arr
+  female=[]
+  arr.each do |n|
+    if n[:gender] == 'F'
+      female << n
+    end
+  end
+  return female
+end 
+
+# p isFemale students
 
 # create a method called filterGender that takes in the students array and a callback, which 
 # will be one of the previous isMale or isFemale methods.  It will return all elements that 
 # meet that condition
+
+def filterGender = Proc.new
 
 # create a variable called allMales that stores the result of calling filterGender and the isMale callback
 
